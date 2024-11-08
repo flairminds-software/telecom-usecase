@@ -129,7 +129,7 @@ st.markdown(
 
 
 def load_data():
-    loader = CSVLoader(file_path="qna.csv", source_column="ï»¿prompt")
+    loader = CSVLoader(file_path="qna.csv", source_column="ï»¿prompt", encoding="utf-8-sig")
     data = loader.load()
     return data
 
